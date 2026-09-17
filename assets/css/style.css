@@ -50,7 +50,7 @@ body {
 /* Navbar */
 
 
-HEAD
+
 /*Footer*/
 
 .footer {
@@ -119,11 +119,21 @@ HEAD
 }
 
 .footer-sociale-medier i {
-    font-size: 55px;
-
     color: var(--black);
-
 }
+
+.fa-facebook{
+    font-size: 45px;
+}
+
+.fa-x-twitter{
+    font-size: 45px;
+}
+
+.fa-linkedin{
+    font-size: 47px;
+}
+
 
 .footer-sociale-medier a {
     text-decoration: none;
