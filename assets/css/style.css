@@ -48,3 +48,91 @@ body {
 
 
 /* Navbar */
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+.footer{
+    background-color: var(--primaryColor70);
+    padding: var(--mdSpacer) var(--xlSpacer);
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.footer-content{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1200px;
+    
+    margin: 0 auto;
+}
+
+/* Venstre side af Footeren */
+
+.footer-venstre h3{
+
+    margin-top: 0;
+
+    margin-bottom: var(--smSpacer);
+
+    color: var(--black);
+
+    font-weight: 700;
+
+    font-size: 20px;
+}
+
+.footer-venstre p{
+    margin: 2px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.footer-venstre a{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+
+/* logo style */
+
+.footer-logo{
+    width: 90px;
+    height: auto;
+    margin-top: var(--smSpacer);
+}
+
+
+
+/* sociale medier  */
+
+.footer-sociale-medier{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-sociale-medier i{
+    font-size: 55px;
+
+    color: var(--black);
+
+}
+
+.footer-sociale-medier a{
+    text-decoration: none;
+
+    color: var(--black);
+}
