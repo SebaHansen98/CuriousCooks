@@ -13,13 +13,13 @@ document.querySelectorAll(".link").forEach(line => {
         underline.style.left = line.offsetLeft + 'px';
     });
 });
-
+ 
 // Gem knap
-
+ 
 const gemKnap = document.querySelectorAll(".opskriftKortGem");
-
+ 
 gemKnap.forEach(function (knap) {
-
+ 
     const gemKnapIcon = knap.querySelector("i");
     knap.addEventListener("click", function () {
         gemKnapIcon.classList.toggle("fa-regular");
