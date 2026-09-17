@@ -59,11 +59,12 @@ nav {
 
     margin-left: 15px;
     margin-right: 15px;
+    padding: 0.5rem;
 }
 
 .navbar img {
     width: 100px;
-    height: 100px;
+    height: auto;
 }
 
 .navlinks a {
@@ -76,10 +77,6 @@ nav {
     list-style-type: none;
     display: flex;
     gap: 58px;
-}
-
-.navlinks {
-    position: relative;
 }
 
 .userIcon .fa-regular {
@@ -105,6 +102,28 @@ nav {
 
 .fa-solid {
     font-size: 20px;
+}
+
+.userIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userIcon p {
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.linksUser-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.userContainer {
+    margin-left: 2rem;
 }
 
 /*Footer*/
