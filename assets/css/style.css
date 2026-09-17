@@ -62,6 +62,7 @@
 
 body {
     margin: 0;
+    
 }
 
 main {
@@ -147,6 +148,126 @@ nav {
 
 .userContainer {
     margin-left: 2rem;
+}
+
+/* food stories */
+
+
+/* foodstory card */
+.foodstories-image img {
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.foodstories-image {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.foodstories-image .fa-bookmark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e1e0e0a4;
+    border-radius: 50%;
+    padding: 4px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodstory-indholdscontainer {
+    flex: 1;
+}
+
+.fa-bookmark {
+    font-size: 25px;
+}
+
+.foodstory-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.foodstory-card {
+    background: var(--secondaryColor90);
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    border-radius: 12px;
+    padding: 1.5rem;
+    overflow: hidden;
+    width: 1200px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.foodstories-container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foodstory-titel-dato {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.foodstory-rating {
+    display: flex;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.foodstory-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fa-star {
+    color: var(--infoWarning);
+}
+
+.share-and-button {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.foodstory-tekst-indhold p {
+    line-height: 150%;
+}
+
+.foodstory-button {
+    padding: 24px 51px 24px 51px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: var(--primaryColor);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fa-arrow-up-from-bracket {
+    font-size: 25px;
+}
+
+.foodstory-profile-and-button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Footer*/
