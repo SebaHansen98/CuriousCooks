@@ -36,15 +36,38 @@
     --smSpacer: 1rem;
     --mdSpacer: 2rem;
     --xlSpacer: 64px;
+    /* font-size */
+    --heading1: 56px;
+    --heading2: 48px;
+    --heading3: 40px;
+    --heading4: 32px;
+    --heading5: 24px;
+    --heading6: 20px;
+    --bodyText: 1rem;
 }
 
 * {
     box-sizing: border-box;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    a,
+    li {
+        font-family: "Montserrat", sans-serif;
+    }
 }
 
 body {
     margin: 0;
     
+}
+
+main {
+    width: 1440px;
+    margin: auto;
 }
 
 
@@ -318,22 +341,21 @@ nav {
     color: var(--black);
 }
 
-.fa-facebook{
+.fa-facebook {
     font-size: 45px;
 }
 
-.fa-x-twitter{
+.fa-x-twitter {
     font-size: 45px;
 }
 
-.fa-linkedin{
+.fa-linkedin {
     font-size: 47px;
 }
 
 
 .footer-sociale-medier a {
     text-decoration: none;
-
     color: var(--black);
 }
 
@@ -342,7 +364,7 @@ nav {
 .opskriftKort {
     width: 350px;
     padding: var(--smSpacer);
-    margin: var(--xlSpacer);
+    margin: var(--mdSpacer);
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -380,4 +402,79 @@ img {
     i {
         font-size: var(--mdSpacer);
     }
+}
+
+.opskriftKortIndhold {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-size: var(--heading5);
+        line-height: 1.2;
+        margin-bottom: 0px;
+    }
+
+    i {
+        font-size: var(--heading5);
+        flex-shrink: 0;
+        margin-top: 20px;
+    }
+}
+
+.opskriftKortRating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    i {
+        color: var(--infoWarning);
+    }
+}
+
+.opskriftKortKategori {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.opskriftKortForfatter {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: black;
+    }
+}
+
+.opskriftKortForfatterImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: var(--smSpacer);
+}
+
+.opskriftKortButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 47px;
+    background-color: var(--primaryColor);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top: var(--smSpacer);
+}
+
+.opskriftKortButton:hover {
+    background-color: var(--primaryColor70);
+    color: var(--black);
+}
+
+.recipeCards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 }
