@@ -49,13 +49,13 @@
 * {
     box-sizing: border-box;
 
-    p,
+    p, 
     h1,
     h2,
     h3,
     h4,
     a,
-    li {
+    li }
         font-family: "Montserrat", sans-serif;
     }
 }
@@ -221,7 +221,7 @@ nav {
 .foodstory-titel-dato {
     display: flex;
     align-items: center;
-    gap: 10rem;
+    justify-content: space-between;
 }
 
 .foodstory-rating {
