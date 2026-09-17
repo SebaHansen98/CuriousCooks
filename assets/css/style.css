@@ -62,7 +62,6 @@
  
 body {
     margin: 0;
- 
 }
  
 main {
@@ -403,14 +402,13 @@ img {
         font-size: var(--mdSpacer);
     }
 }
- 
- 
+
+
 .forside-hero {
     position: relative;
     height: 400px;
     overflow: hidden;
 }
- 
 .forside-hero-billede {
     width: 100%;
     height: 400px;
@@ -421,15 +419,15 @@ img {
     /* her flytter jeg fokuspunktet på billedet så man ser mest det der ikke er sløret på billedet */
     object-position: center 80%;
 }
- 
+
 .forside-hero-titel .curious {
     color: var(--primaryColor);
 }
- 
+
 .forside-hero-titel .cooks {
     color: var(--black);
 }
- 
+
 .forside-hero-titel {
     /* gør at teksten kan ligges oven på billedet */
     position: absolute;
@@ -442,12 +440,10 @@ img {
     font-size: 56px;
     font-weight: 700;
 }
- 
 .forside-intro {
     padding: var(--mdSpacer)var(--xlSpacer);
     /* background-color: var(--grey4); */
 }
- 
 .forside-intro h2 {
     /* her ligger jeg overskriften i midten */
     text-align: center;
@@ -476,7 +472,6 @@ img {
     height: 453px;
     object-fit: cover;
 }
- 
 /* her fokusere vi på teksten i intro sektionen */
 .forside-intro-tekst {
     width: 370px;
@@ -484,7 +479,6 @@ img {
     line-height: 1.5;
     color: var(--black);
 }
- 
 .forside-intro-tekst p {
     display: block;
     width: 100%;
