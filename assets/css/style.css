@@ -221,8 +221,44 @@ nav {
 /* Opskriftkort til opskriftSamling.html */
 
 .opskriftKort {
-    /* fjern den her */
-    background-color: rgba(255, 0, 0, 0.144);
     width: 350px;
     padding: var(--smSpacer);
+    margin: var(--xlSpacer);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Opskrift billede */
+.imgWrapper {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Gem knap */
+.opskriftKortGem {
+    position: absolute;
+    top: var(--mdSpacer);
+    right: var(--mdSpacer);
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e1e0e0a4;
+
+    i {
+        font-size: var(--mdSpacer);
+    }
 }
