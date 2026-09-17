@@ -1,6 +1,7 @@
 /* Variables */
 
 :root {
+    /* Farver */
     --primaryColor: #4084b8;
     --primaryColor90: #D9E7F2;
     --primaryColor80: #B3CFE5;
@@ -11,8 +12,27 @@
     --primaryColor30: #275172;
     --primaryColor20: #1A364C;
     --primaryColor10: #0D1B26;
-
-
+    --secondaryColor: #B78740;
+    --secondaryColor90: #F2E8D9;
+    --secondaryColor80: #E5D1B3;
+    --secondaryColor70: #D7BA8E;
+    --secondaryColor60: #CAA268;
+    --secondaryColor50: #BD8B42;
+    --secondaryColor40: #976F35;
+    --secondaryColor30: #715428;
+    --secondaryColor20: #4C381A;
+    --secondaryColor10: #261C0D;
+    --infoColor: #2F80ED;
+    --infoSuccess: #27AE60;
+    --infoWarning: #E2B93B;
+    --infoError: #EB5757;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey1: #333333;
+    --grey2: #4F4F4F;
+    --grey3: #909090;
+    --grey4: #F7F7F7;
+    /* Spacers */
     --smSpacer: 1rem;
     --mdSpacer: 2rem;
     --xlSpacer: 64px;
