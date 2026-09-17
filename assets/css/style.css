@@ -62,6 +62,7 @@
 
 body {
     margin: 0;
+    
 }
 
 main {
@@ -147,6 +148,126 @@ nav {
 
 .userContainer {
     margin-left: 2rem;
+}
+
+/* food stories */
+
+
+/* foodstory card */
+.foodstories-image img {
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.foodstories-image {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.foodstories-image .fa-bookmark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e1e0e0a4;
+    border-radius: 50%;
+    padding: 4px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foodstory-indholdscontainer {
+    flex: 1;
+}
+
+.fa-bookmark {
+    font-size: 25px;
+}
+
+.foodstory-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.foodstory-card {
+    background: var(--secondaryColor90);
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    border-radius: 12px;
+    padding: 1.5rem;
+    overflow: hidden;
+    width: 1200px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.foodstories-container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foodstory-titel-dato {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+.foodstory-rating {
+    display: flex;
+    align-items: end;
+    margin-bottom: 1rem;
+}
+
+.foodstory-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.fa-star {
+    color: var(--infoWarning);
+}
+
+.share-and-button {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.foodstory-tekst-indhold p {
+    line-height: 150%;
+}
+
+.foodstory-button {
+    padding: 24px 51px 24px 51px;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: var(--primaryColor);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fa-arrow-up-from-bracket {
+    font-size: 25px;
+}
+
+.foodstory-profile-and-button-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Footer*/
@@ -282,6 +403,97 @@ img {
         font-size: var(--mdSpacer);
     }
 }
+
+
+.forside-herp{
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+
+.forside-hero-billede{
+    width: 100%;
+    height: 400px;
+    /* billedet bliver ikke strukket */
+    object-fit: cover;
+    /* fjerner små mellerum */
+    display: block;
+    /* her flytter jeg fokuspunktet på billedet så man ser mest det der ikke er sløret på billedet */
+    object-position: center 80%;
+}
+
+.forside-hero-titel .curious{
+    color: var(--primaryColor);
+}
+
+.forside-hero-titel .cooks{
+    color: var(--black);
+}
+
+.forside-hero-titel{
+    /* gør at teksten kan ligges oven på billedet */
+    position: absolute;
+    /* flytter det 50% ned */
+    top: 40%;
+    left: 50%;
+    /* Gør at teksten er præcist centreret */
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+
+.forside-intro{
+    padding: var(--mdSpacer)var(--xlSpacer);
+
+    background-color: var(--grey4);
+}
+
+
+.forside-intro h2{
+    /* her ligger jeg overskriften i midten */
+    text-align: center;
+    /* her fjerner jeg luft over overskriften */
+    margin-top: 0;
+    /* det samme bare under */
+    margin-bottom: var(--mdSpacer);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* her gør vi at billed og tekst står ved siden af hinanden */
+.forside-intro-content{
+    display: flex;
+    /* her centrer vi indholdet */
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--smSpacer);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* her fokusere vi på billedet i intro sektionen */
+.forside-intro-billede{
+    width: 560px;
+    height: 453px;
+    object-fit: cover;
+}
+/* her fokusere vi på teksten i intro sektionen */
+.forside-intro-tekst{
+    width: 370px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+.forside-intro-tekst p{
+    display: block;
+    width: 100%;
+    margin: var(--smSpacer);
+}
+
+
 
 .opskriftKortIndhold {
     display: flex;
