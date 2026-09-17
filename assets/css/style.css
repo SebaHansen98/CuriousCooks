@@ -260,3 +260,95 @@ img {
         font-size: var(--mdSpacer);
     }
 }
+
+
+.forside-herp{
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+
+.forside-hero-billede{
+    width: 100%;
+    height: 600px;
+    /* billedet bliver ikke strukket */
+    object-fit: cover;
+    /* fjerner små mellerum */
+    display: block;
+    /* her flytter jeg fokuspunktet på billedet så man ser mest det der ikke er sløret på billedet */
+    object-position: center 70%;
+}
+
+.forside-hero-titel .curious{
+    color: var(--primaryColor);
+}
+
+.forside-hero-titel .cooks{
+    color: var(--black);
+}
+
+.forside-hero-titel{
+    /* gør at teksten kan ligges oven på billedet */
+    position: absolute;
+    /* flytter det 50% ned */
+    top: 50%;
+    left: 50%;
+    /* Gør at teksten er præcist centreret */
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+
+.forside-intro{
+    padding: var(--mdSpacer)var(--xlSpacer);
+
+    background-color: var(--grey4);
+}
+
+
+.forside-intro h2{
+    /* her ligger jeg overskriften i midten */
+    text-align: center;
+    /* her fjerner jeg luft over overskriften */
+    margin-top: 0;
+    /* det samme bare under */
+    margin-bottom: var(--mdSpacer);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* her gør vi at billed og tekst står ved siden af hinanden */
+.forside-intro-content{
+    display: flex;
+    /* her centrer vi indholdet */
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--smSpacer);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* her fokusere vi på billedet i intro sektionen */
+.forside-intro-billede{
+    width: 470px;
+    height: 300px;
+    object-fit: cover;
+}
+/* her fokusere vi på teksten i intro sektionen */
+.forside-intro-tekst{
+    width: 370px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--black);
+}
+
+.forside-intro-tekst p{
+    display: block;
+    width: 100%;
+    margin: var(--smSpacer);
+}
+
+
+
