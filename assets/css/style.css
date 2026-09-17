@@ -62,7 +62,7 @@
 
 body {
     margin: 0;
-    
+
 }
 
 main {
@@ -405,13 +405,13 @@ img {
 }
 
 
-.forside-herp{
+.forside-hero {
     position: relative;
-    height: 340px;
+    height: 400px;
     overflow: hidden;
 }
 
-.forside-hero-billede{
+.forside-hero-billede {
     width: 100%;
     height: 400px;
     /* billedet bliver ikke strukket */
@@ -422,19 +422,19 @@ img {
     object-position: center 80%;
 }
 
-.forside-hero-titel .curious{
+.forside-hero-titel .curious {
     color: var(--primaryColor);
 }
 
-.forside-hero-titel .cooks{
+.forside-hero-titel .cooks {
     color: var(--black);
 }
 
-.forside-hero-titel{
+.forside-hero-titel {
     /* gør at teksten kan ligges oven på billedet */
     position: absolute;
     /* flytter det 50% ned */
-    top: 40%;
+    top: 50%;
     left: 50%;
     /* Gør at teksten er præcist centreret */
     transform: translate(-50%, -50%);
@@ -443,15 +443,12 @@ img {
     font-weight: 700;
 }
 
-
-.forside-intro{
+.forside-intro {
     padding: var(--mdSpacer)var(--xlSpacer);
-
-    background-color: var(--grey4);
+    /* background-color: var(--grey4); */
 }
 
-
-.forside-intro h2{
+.forside-intro h2 {
     /* her ligger jeg overskriften i midten */
     text-align: center;
     /* her fjerner jeg luft over overskriften */
@@ -463,7 +460,7 @@ img {
 }
 
 /* her gør vi at billed og tekst står ved siden af hinanden */
-.forside-intro-content{
+.forside-intro-content {
     display: flex;
     /* her centrer vi indholdet */
     justify-content: center;
@@ -474,20 +471,21 @@ img {
 }
 
 /* her fokusere vi på billedet i intro sektionen */
-.forside-intro-billede{
+.forside-intro-billede {
     width: 560px;
     height: 453px;
     object-fit: cover;
 }
+
 /* her fokusere vi på teksten i intro sektionen */
-.forside-intro-tekst{
+.forside-intro-tekst {
     width: 370px;
     font-size: 16px;
     line-height: 1.5;
     color: var(--black);
 }
 
-.forside-intro-tekst p{
+.forside-intro-tekst p {
     display: block;
     width: 100%;
     margin: var(--smSpacer);
@@ -568,4 +566,5 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    justify-content: center;
 }
