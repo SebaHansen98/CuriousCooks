@@ -270,13 +270,13 @@ img {
 
 .forside-hero-billede{
     width: 100%;
-    height: 600px;
+    height: 400px;
     /* billedet bliver ikke strukket */
     object-fit: cover;
     /* fjerner små mellerum */
     display: block;
     /* her flytter jeg fokuspunktet på billedet så man ser mest det der ikke er sløret på billedet */
-    object-position: center 70%;
+    object-position: center 80%;
 }
 
 .forside-hero-titel .curious{
@@ -291,7 +291,7 @@ img {
     /* gør at teksten kan ligges oven på billedet */
     position: absolute;
     /* flytter det 50% ned */
-    top: 50%;
+    top: 40%;
     left: 50%;
     /* Gør at teksten er præcist centreret */
     transform: translate(-50%, -50%);
@@ -332,8 +332,8 @@ img {
 
 /* her fokusere vi på billedet i intro sektionen */
 .forside-intro-billede{
-    width: 470px;
-    height: 300px;
+    width: 560px;
+    height: 453px;
     object-fit: cover;
 }
 /* her fokusere vi på teksten i intro sektionen */
