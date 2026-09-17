@@ -1,3 +1,23 @@
+/* Variables */
+
+:root {
+    --primaryColor: #4084b8;
+    --primaryColor90: #D9E7F2;
+    --primaryColor80: #B3CFE5;
+    --primaryColor70: #8DB7D8;
+    --primaryColor60: #68A0CA;
+    --primaryColor50: #4288BD;
+    --primaryColor40: #356D97;
+    --primaryColor30: #275172;
+    --primaryColor20: #1A364C;
+    --primaryColor10: #0D1B26;
+
+
+    --smSpacer: 1rem;
+    --mdSpacer: 2rem;
+    --xlSpacer: 64px;
+}
+
 * {
     box-sizing: border-box;
 }
