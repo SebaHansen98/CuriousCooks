@@ -48,8 +48,64 @@ body {
 
 
 /* Navbar */
+nav {
+    background-color: var(--primaryColor80);
+}
 
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 32px;
+}
+
+.navlinks ul {
+    list-style-type: none;
+    display: flex;
+    gap: 58px;
+}
+
+.navlinks {
+    position: relative;
+}
+
+.userIcon .fa-regular {
+    font-size: 50px;
+}
+
+.iconStack {
+    position: relative;
+    display: inline-block;
+    background: var(--secondaryColor60);
+    padding: 8px 0.5px;
+    border-radius: 50%;
+}
+
+.iconStack .fa-solid {
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+    background: var(--grey3);
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
 
 /*Footer*/
 
@@ -144,8 +200,44 @@ body {
 /* Opskriftkort til opskriftSamling.html */
 
 .opskriftKort {
-    /* fjern den her */
-    background-color: rgba(255, 0, 0, 0.144);
     width: 350px;
     padding: var(--smSpacer);
+    margin: var(--xlSpacer);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Opskrift billede */
+.imgWrapper {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Gem knap */
+.opskriftKortGem {
+    position: absolute;
+    top: var(--mdSpacer);
+    right: var(--mdSpacer);
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e1e0e0a4;
+
+    i {
+        font-size: var(--mdSpacer);
+    }
 }
