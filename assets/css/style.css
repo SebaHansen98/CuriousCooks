@@ -107,37 +107,6 @@ nav {
     font-size: 20px;
 }
 
-.userIcon {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.userIcon p {
-    margin-left: 5px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.linksUser-container {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-}
-
-.userContainer {
-    margin-left: 2rem;
-}
-
-/* underline på navlinks */
-.underline {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: var(--secondaryColor60);
-
-}
 /*Footer*/
 
 .footer {
@@ -206,11 +175,21 @@ nav {
 }
 
 .footer-sociale-medier i {
-    font-size: 55px;
-
     color: var(--black);
-
 }
+
+.fa-facebook{
+    font-size: 45px;
+}
+
+.fa-x-twitter{
+    font-size: 45px;
+}
+
+.fa-linkedin{
+    font-size: 47px;
+}
+
 
 .footer-sociale-medier a {
     text-decoration: none;
