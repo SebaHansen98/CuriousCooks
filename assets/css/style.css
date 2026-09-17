@@ -48,3 +48,14 @@ body {
 
 
 /* Navbar */
+
+
+
+/* Opskriftkort til opskriftSamling.html */
+
+.opskriftKort {
+    /* fjern den her */
+    background-color: rgba(255, 0, 0, 0.144);
+    width: 350px;
+    padding: var(--smSpacer);
+}
