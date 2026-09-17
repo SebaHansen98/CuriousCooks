@@ -1,7 +1,142 @@
+/* Variables */
+
+:root {
+    /* Farver */
+    --primaryColor: #4084b8;
+    --primaryColor90: #D9E7F2;
+    --primaryColor80: #B3CFE5;
+    --primaryColor70: #8DB7D8;
+    --primaryColor60: #68A0CA;
+    --primaryColor50: #4288BD;
+    --primaryColor40: #356D97;
+    --primaryColor30: #275172;
+    --primaryColor20: #1A364C;
+    --primaryColor10: #0D1B26;
+    --secondaryColor: #B78740;
+    --secondaryColor90: #F2E8D9;
+    --secondaryColor80: #E5D1B3;
+    --secondaryColor70: #D7BA8E;
+    --secondaryColor60: #CAA268;
+    --secondaryColor50: #BD8B42;
+    --secondaryColor40: #976F35;
+    --secondaryColor30: #715428;
+    --secondaryColor20: #4C381A;
+    --secondaryColor10: #261C0D;
+    --infoColor: #2F80ED;
+    --infoSuccess: #27AE60;
+    --infoWarning: #E2B93B;
+    --infoError: #EB5757;
+    --black: #000000;
+    --white: #FFFFFF;
+    --grey1: #333333;
+    --grey2: #4F4F4F;
+    --grey3: #909090;
+    --grey4: #F7F7F7;
+    /* Spacers */
+    --smSpacer: 1rem;
+    --mdSpacer: 2rem;
+    --xlSpacer: 64px;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+}
+
+
+/* Navbar */
+
+
+
+HEAD
+/*Footer*/
+
+.footer {
+    background-color: var(--primaryColor70);
+    padding: var(--mdSpacer) var(--xlSpacer);
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.footer-content {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+/* Venstre side af Footeren */
+
+.footer-venstre h3 {
+
+    margin-top: 0;
+
+    margin-bottom: var(--smSpacer);
+
+    color: var(--black);
+
+    font-weight: 700;
+
+    font-size: 20px;
+}
+
+.footer-venstre p {
+    margin: 2px 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.footer-venstre a {
+    color: var(--black);
+    text-decoration: underline;
+}
+
+
+/* logo style */
+
+.footer-logo {
+    width: 90px;
+    height: auto;
+    margin-top: var(--smSpacer);
+}
+
+
+
+/* sociale medier  */
+
+.footer-sociale-medier {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-sociale-medier i {
+    font-size: 55px;
+
+    color: var(--black);
+
+}
+
+.footer-sociale-medier a {
+    text-decoration: none;
+
+    color: var(--black);
+}
+
+/* Opskriftkort til opskriftSamling.html */
+
+.opskriftKort {
+    /* fjern den her */
+    background-color: rgba(255, 0, 0, 0.144);
+    width: 350px;
+    padding: var(--smSpacer);
 }
