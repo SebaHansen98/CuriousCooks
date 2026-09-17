@@ -26,3 +26,4 @@ gemKnap.forEach(function (knap) {
         gemKnapIcon.classList.toggle("fa-solid");
     });
 });
+
