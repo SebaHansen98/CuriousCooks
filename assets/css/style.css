@@ -48,3 +48,92 @@ body {
 
 
 /* Navbar */
+nav {
+    background-color: var(--primaryColor80);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 32px;
+}
+
+.navlinks ul {
+    list-style-type: none;
+    display: flex;
+    gap: 58px;
+}
+
+.navlinks {
+    position: relative;
+}
+
+.userIcon .fa-regular {
+    font-size: 50px;
+}
+
+.iconStack {
+    position: relative;
+    display: inline-block;
+    background: var(--secondaryColor60);
+    padding: 8px 0.5px;
+    border-radius: 50%;
+}
+
+.iconStack .fa-solid {
+    position: absolute;
+    bottom: 1px;
+    right: 2px;
+    background: var(--grey3);
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.userIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userIcon p {
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.linksUser-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.userContainer {
+    margin-left: 2rem;
+}
+
+/* underline på navlinks */
+.underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--secondaryColor60);
+}
