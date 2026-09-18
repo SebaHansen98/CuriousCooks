@@ -698,3 +698,38 @@ img {
     margin: auto;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+/* opsskrift siden kode */
+
+.opskrift-side{
+    background-color: var(--secondaryColor90);
+}
+
+.opskrift-container{
+    max-width: 1000px;
+    margin: 0% auto;
+    padding: var(--mdSpacer);
+}
+
+.opskrift-titel{
+    text-align: center;
+    margin-bottom: var(--mdSpacer);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.opskrift-billed-container{
+    position: relative;
+}
+
+.opskrift-billede{
+    width: 100%;
+}
