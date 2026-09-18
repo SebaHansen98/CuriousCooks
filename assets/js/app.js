@@ -27,3 +27,6 @@ gemKnap.forEach(function (knap) {
     });
 });
 
+function myFunction() {
+    alert("Du har ikke adgang til at oprette Food stories endnu. or at dele dine egne Food stories med fællesskabet skal du være Pro Chef. Bliv Pro Chef og få mulighed for at oprette, dele og inspirere andre med dine egne historier.");
+}
