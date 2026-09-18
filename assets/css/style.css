@@ -153,7 +153,7 @@ nav {
 
 /* food stories hero section */
 .foodstory-header-content img {
-    width: 1440;
+    width: 100%;
     height: 400px;
     object-fit: cover;
 
@@ -598,7 +598,7 @@ img {
     justify-content: center;
     align-items: flex-start;
     gap: var(--smSpacer);
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
  
