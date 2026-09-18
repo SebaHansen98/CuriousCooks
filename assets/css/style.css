@@ -1,5 +1,5 @@
 /* Variables */
- 
+
 :root {
     /* Farver */
     --primaryColor: #4084b8;
@@ -45,10 +45,10 @@
     --heading6: 20px;
     --bodyText: 1rem;
 }
- 
+
 * {
     box-sizing: border-box;
- 
+
     p,
     h1,
     h2,
@@ -59,53 +59,53 @@
         font-family: "Montserrat", sans-serif;
     }
 }
- 
+
 body {
     margin: 0;
 }
- 
+
 main {
     width: 1440px;
     margin: auto;
 }
- 
- 
+
+
 /* Navbar */
 nav {
     background-color: var(--primaryColor80);
 }
- 
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
+
     margin-left: 15px;
     margin-right: 15px;
     padding: 0.5rem;
 }
- 
+
 .navbar img {
     width: 100px;
     height: auto;
 }
- 
+
 .navlinks a {
     text-decoration: none;
     color: var(--black);
     font-size: 32px;
 }
- 
+
 .navlinks ul {
     list-style-type: none;
     display: flex;
     gap: 58px;
 }
- 
+
 .userIcon .fa-regular {
     font-size: 50px;
 }
- 
+
 .iconStack {
     position: relative;
     display: inline-block;
@@ -113,7 +113,7 @@ nav {
     padding: 8px 0.5px;
     border-radius: 50%;
 }
- 
+
 .iconStack .fa-solid {
     position: absolute;
     bottom: 1px;
@@ -122,33 +122,33 @@ nav {
     border-radius: 50%;
     padding: 1px;
 }
- 
+
 .fa-solid {
     font-size: 20px;
 }
- 
+
 .userIcon {
     display: flex;
     align-items: center;
     cursor: pointer;
 }
- 
+
 .userIcon p {
     margin-left: 5px;
     font-size: 16px;
     font-weight: 600;
 }
- 
+
 .linksUser-container {
     display: flex;
     align-items: center;
     justify-content: end;
 }
- 
+
 .userContainer {
     margin-left: 2rem;
 }
- 
+
 /* food stories */
 
 /* food stories hero section */
@@ -178,6 +178,7 @@ nav {
     margin-top: 42px;
     background-color: white;
     margin-left: 4rem;
+    font-weight: bold;
 }
 
 .breadcrumb ol {
@@ -255,11 +256,12 @@ nav {
     justify-content: center;
 }
 
-.fa-plus, .fa-sliders {
+.fa-plus,
+.fa-sliders {
     font-size: 30px;
 }
 
-.filter-opret-knap  {
+.filter-opret-knap {
     width: 1200px;
     margin: 0 auto;
 
@@ -272,6 +274,7 @@ nav {
     color: var(--black);
     transition: 0.3s;
 }
+
 /* foodstory card */
 .foodstories-image img {
     width: 550px;
@@ -279,14 +282,14 @@ nav {
     object-fit: cover;
     display: block;
 }
- 
+
 .foodstories-image {
     position: relative;
     display: inline-block;
     flex-shrink: 0;
     align-self: stretch;
 }
- 
+
 .foodstories-image .fa-bookmark {
     position: absolute;
     top: 10px;
@@ -296,17 +299,17 @@ nav {
     padding: 4px;
     width: 50px;
     height: 50px;
- 
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
- 
+
 .foodstory-indholdscontainer {
     flex: 1;
     display: flex;
 }
- 
+
 .foodstory-indhold {
     display: flex;
     flex-direction: column;
@@ -317,20 +320,20 @@ nav {
 .fa-bookmark {
     font-size: 25px;
 }
- 
+
 .foodstory-profile img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
- 
+
 .foodstory-card {
     background: var(--secondaryColor90);
     padding: 1rem;
     display: flex;
     align-items: stretch;
     gap: 1.5rem;
- 
+
     border-radius: 12px;
     padding: 1.5rem;
     overflow: hidden;
@@ -338,7 +341,7 @@ nav {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
- 
+
 .foodstories-container {
     display: flex;
     margin: auto;
@@ -346,39 +349,39 @@ nav {
     flex-direction: column;
     margin-bottom: 5rem;
 }
- 
+
 .foodstory-titel-dato {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
- 
+
 .foodstory-rating {
     display: flex;
     align-items: end;
     margin-bottom: 1rem;
 }
- 
+
 .foodstory-profile {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
- 
+
 .fa-star {
     color: var(--infoWarning);
 }
- 
+
 .share-and-button {
     display: flex;
     align-items: center;
     gap: 2.5rem;
 }
- 
+
 .foodstory-tekst-indhold p {
     line-height: 150%;
 }
- 
+
 .foodstory-button {
     padding: 24px 51px 24px 51px;
     border-style: solid;
@@ -395,107 +398,119 @@ nav {
     color: var(--black);
     transition: 0.3s;
 }
- 
+
 .fa-arrow-up-from-bracket {
     font-size: 25px;
 }
- 
+
 .foodstory-profile-and-button-container {
     display: flex;
     justify-content: space-between;
 }
- 
+
+.foodstory-intro-container {
+
+    h2 {
+        font-weight: bold;
+        font-size: var(--heading3);
+    }
+
+    h3 {
+        margin-top: 0px;
+    }
+}
+
 /*Footer*/
- 
+
 .footer {
     background-color: var(--primaryColor70);
     padding: var(--mdSpacer) var(--xlSpacer);
     font-family: "Montserrat", sans-serif;
- 
+
 }
- 
+
 .footer-content {
     display: flex;
- 
+
     justify-content: space-between;
- 
+
     align-items: center;
- 
+
     max-width: 1200px;
- 
+
     margin: 0 auto;
 }
- 
+
 /* Venstre side af Footeren */
- 
+
 .footer-venstre h3 {
- 
+
     margin-top: 0;
- 
+
     margin-bottom: var(--smSpacer);
- 
+
     color: var(--black);
- 
+
     font-weight: 700;
- 
+
     font-size: 20px;
 }
- 
+
 .footer-venstre p {
     margin: 2px 0;
     font-size: 16px;
     line-height: 24px;
     color: var(--black);
 }
- 
+
 .footer-venstre a {
     color: var(--black);
     text-decoration: underline;
 }
- 
- 
+
+
 /* logo style */
- 
+
 .footer-logo {
     width: 90px;
     height: auto;
     margin-top: var(--smSpacer);
 }
- 
- 
- 
+
+
+
 /* sociale medier  */
- 
+
 .footer-sociale-medier {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
- 
+
 .footer-sociale-medier i {
     color: var(--black);
 }
- 
+
 .fa-facebook {
     font-size: 45px;
 }
- 
+
 .fa-x-twitter {
     font-size: 45px;
 }
- 
+
 .fa-linkedin {
     font-size: 47px;
 }
- 
- 
+
+
 .footer-sociale-medier a {
     text-decoration: none;
     color: var(--black);
 }
- 
+
 /* Opskriftkort til opskriftSamling.html */
- 
+
 .opskriftKort {
     width: 350px;
     padding: var(--smSpacer);
@@ -504,7 +519,7 @@ nav {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     position: relative;
 }
- 
+
 /* Opskrift billede */
 .imgWrapper {
     width: 100%;
@@ -512,14 +527,14 @@ nav {
     border-radius: 10px;
     overflow: hidden;
 }
- 
+
 img {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
 }
- 
+
 /* Gem knap */
 .opskriftKortGem {
     position: absolute;
@@ -533,11 +548,13 @@ img {
     justify-content: center;
     border-radius: 50%;
     background-color: #e1e0e0a4;
- 
+
     i {
         font-size: var(--mdSpacer);
     }
 }
+
+
 
 
 .forside-hero {
@@ -545,6 +562,7 @@ img {
     height: 400px;
     overflow: hidden;
 }
+
 .forside-hero-billede {
     width: 100%;
     height: 400px;
@@ -576,10 +594,12 @@ img {
     font-size: 56px;
     font-weight: 700;
 }
+
 .forside-intro {
     padding: var(--mdSpacer)var(--xlSpacer);
     /* background-color: var(--grey4); */
 }
+
 .forside-intro h2 {
     /* her ligger jeg overskriften i midten */
     text-align: center;
@@ -590,7 +610,7 @@ img {
     font-size: 26px;
     font-weight: 700;
 }
- 
+
 /* her gør vi at billed og tekst står ved siden af hinanden */
 .forside-intro-content {
     display: flex;
@@ -601,13 +621,14 @@ img {
     max-width: 1200px;
     margin: 0 auto;
 }
- 
+
 /* her fokusere vi på billedet i intro sektionen */
 .forside-intro-billede {
     width: 560px;
     height: 453px;
     object-fit: cover;
 }
+
 /* her fokusere vi på teksten i intro sektionen */
 .forside-intro-tekst {
     width: 370px;
@@ -615,55 +636,56 @@ img {
     line-height: 1.5;
     color: var(--black);
 }
+
 .forside-intro-tekst p {
     display: block;
     width: 100%;
     margin: var(--smSpacer);
 }
- 
- 
- 
+
+
+
 .opskriftKortIndhold {
     display: flex;
     justify-content: space-between;
- 
+
     h2 {
         font-size: var(--heading5);
         line-height: 1.2;
         margin-bottom: 0px;
     }
- 
+
     i {
         font-size: var(--heading5);
         flex-shrink: 0;
         margin-top: 20px;
     }
 }
- 
+
 .opskriftKortRating {
     display: flex;
     align-items: center;
     gap: 5px;
- 
+
     i {
         color: var(--infoWarning);
     }
 }
- 
+
 .opskriftKortKategori {
     font-weight: bold;
     margin-top: 0px;
 }
- 
+
 .opskriftKortForfatter {
     display: flex;
     align-items: center;
- 
+
     a {
         color: black;
     }
 }
- 
+
 .opskriftKortForfatterImg {
     width: 50px;
     height: 50px;
@@ -671,7 +693,7 @@ img {
     object-fit: cover;
     margin-right: var(--smSpacer);
 }
- 
+
 .opskriftKortButton {
     display: flex;
     align-items: center;
@@ -686,12 +708,12 @@ img {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     margin-top: var(--smSpacer);
 }
- 
+
 .opskriftKortButton:hover {
     background-color: var(--primaryColor70);
     color: var(--black);
 }
- 
+
 .recipeCards {
     display: flex;
     flex-wrap: wrap;
@@ -709,27 +731,27 @@ img {
 
 /* opsskrift siden kode */
 
-.opskrift-side{
+.opskrift-side {
     background-color: var(--secondaryColor90);
 }
 
-.opskrift-container{
+.opskrift-container {
     max-width: 1000px;
     margin: 0% auto;
     padding: var(--mdSpacer);
 }
 
-.opskrift-titel{
+.opskrift-titel {
     text-align: center;
     margin-bottom: var(--mdSpacer);
     font-size: 28px;
     font-weight: 700;
 }
 
-.opskrift-billed-container{
+.opskrift-billed-container {
     position: relative;
 }
 
-.opskrift-billede{
+.opskrift-billede {
     width: 100%;
 }

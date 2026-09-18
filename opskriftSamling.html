@@ -42,7 +42,58 @@
             </div>
         </div>
     </nav>
+    <header>
+        <div class="foodstory-header-content">
+            <img src="./assets/img/easy_halloumi_wrap_57379_16x9.jpg" alt="A halloumi wrap">
+        </div>
+    </header>
+    <!-- breadcrumbs -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+            <li><a href="./index.html">Forside</a></li>
+            <li><span aria-current="page">Opskrifter</span></li>
+        </ol>
+    </nav>
     <main>
+        <section class="foodstory-intro-container">
+            <h2>Opskriftsamling</h2>
+            <div class="foodstories-intro-image">
+                <img src="./assets/img/Grillet char siu stegt svinekød med gai lan.jpg" alt="Food stories introduktion">
+                <div class="foodstories-intro-text">
+                    <h3>Find inspiration til dit næste måltid</h3>
+                    <p>
+                        Udforsk vores opskrifter og find inspiration til både hurtige hverdagsretter og måltider, du kan
+                        bruge lidt ekstra tid på. Her finder du forskellige retter, der gør det nemmere at beslutte,
+                        hvad der skal på bordet.
+                    </p>
+
+                    <p>
+                        Gå på opdagelse blandt opskrifterne, prøv noget nyt eller find en ret, der passer til det, du
+                        allerede har lyst til. Uanset om du leder efter noget hurtigt og enkelt eller vil gøre lidt mere
+                        ud af dagens måltid, kan du finde inspiration her.
+                    </p>
+
+                    <p>
+
+                        Find dine favoritter, gem dem til senere, og gør det lidt nemmere at finde ud af, hvad du skal
+                        lave næste gang.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="filter-opret-knap">
+            <button class="filter"><i class="fa-solid fa-sliders"></i> | Filter</button>
+            <button onclick="myFunction()" class="filter"><i class="fa-solid fa-plus"></i> | Tilføj opskrift</button>
+
+        </section>
+        <div class="line"></div>
+        <div class="opskriftSamlingKategorier">
+            <a href="#" class="opskriftSamlingKategori">
+                <img src="" alt="">
+                <span>Morgenmad</span>
+            </a>
+        </div>
+
         <section class="recipeCards">
             <article class="opskriftKort">
                 <div class="imgWrapper">
@@ -208,6 +259,43 @@
             </article>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-content">
+
+            <div class="footer-venstre">
+                <h3>Kontakt:</h3>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:curiouscooks@gmail.com"> Curiouscooks@gmail.com </a>
+                </p>
+                <p>
+                    <strong>Telefon:</strong>
+                    <a href="tel:+4541839642"> 45 41 83 96 42 </a>
+                </p>
+
+                <img src="assets/img/logo.svg" alt="CuriousCooks logo" class="footer-logo" />
+            </div>
+
+            <div class="footer-sociale-medier">
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+
+                <a href="#" aria-label="Linkedln">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
