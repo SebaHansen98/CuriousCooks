@@ -709,14 +709,19 @@ img {
 
 /* opsskrift siden kode */
 
-.opskrift-side{
-    background-color: var(--secondaryColor90);
+/* Her laver vi øverste del af siden */
+
+.Opskrift-side{
+    background-color: var(--white);
+    padding-top: var(--mdSpacer);
 }
 
 .opskrift-container{
-    max-width: 1000px;
+    max-width: 1296px;
     margin: 0% auto;
     padding: var(--mdSpacer);
+    background-color: var(--secondaryColor80);
+    border-radius: 15px;
 }
 
 .opskrift-titel{
@@ -732,4 +737,380 @@ img {
 
 .opskrift-billede{
     width: 100%;
+    height: 460px;
+    object-fit: cover;
+    display: block;
+}
+
+.opkrift-gem-opskriftsiden{
+    /* placere knappen oven på billedet */
+    position: absolute;
+    /* afstand */
+    top: var(--smSpacer);
+    right: var(--smSpacer);
+    background-color: #e1e0e0a4;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.opkrift-gem-opskriftsiden:hover{
+    background-color: var(--primaryColor70);
+        color: var(--black);
+}
+
+/* her kommer info omkring retten */
+
+
+
+
+.opskrift-info-del{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--smSpacer);
+    border-bottom: 2px solid var(--grey3);
+}
+
+.opskrift-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* her laver vi stregen mellem 5,0 og anmeldelser */
+
+.opskrift-raiting-streg{
+    width: 2px;
+    height: 24px;
+
+    background-color: var(--black);
+}
+
+
+
+/* nu laver vi raitings */
+
+.opskrift-raiting{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+/* stjernerne */
+
+.opskrift-stjerner{
+    display: flex;
+    gap: 5px;
+}
+
+.opskrift-stjerner i{
+    color: var(--secondaryColor60);
+    font-size: 26px;
+}
+
+/* kok billed */
+
+.opskrift-kok{
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* angela hartnett */
+
+.opskrift-kok-tekst h3{
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.opskrift-kok-tekst p{
+    margin: 2px 0;
+
+    font-size: 18px;
+}
+
+.opskrift-kok-info{
+    display: flex;
+    align-items: center;
+    gap: var(--smSpacer);
+    margin-top: var(--smSpacer);
+}
+
+/* højre side af kok info i opskriftsiden */
+
+.opskrift-info-højre{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* aftensmad glutenfri og sundt */
+.opskrift-kategori-side{
+    font-size: 15px;
+}
+
+/* teksten under aftensmad */
+.opskrift-kategori-side p{
+    margin: 8px 0 0 0;
+}
+
+
+/* del knappen */
+
+.opskriftside-del{
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-top: var(--mdSpacer);
+}
+
+
+.opskriftside-del:hover{
+    background-color: var(--primaryColor70);
+    color: var(--black);
+}
+
+
+/* opskrift tider */
+
+.opskrift-tider{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: var(--mdSpacer) 0;
+}
+
+.opskrift-tid h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.opskrift-tid p{
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
+/* beskrivelse */
+
+.opskrift-beskrivelsen{
+    margin-top: var(--mdSpacer);
+    max-width: 470px;
+}
+
+.opskrift-beskrivelsen h3{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.opskrift-beskrivelsen p{
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+
+.opskrift-detaljer{
+    display: flex;
+    gap: var(--xlSpacer);
+    margin-top: var(--mdSpacer);
+    align-items: flex-start;
+}
+
+.opskrift-ingredienser{
+    width: 40%;
+}
+
+.opskrift-fremgangsmåde{
+    width: 60%;
+}
+
+.opskrift-ingredienser h2,
+.opskrift-fremgangsmåde h2{
+    margin-top: 0;
+    margin-bottom: var(--smSpacer);
+    font-size: 24px;
+}
+
+.opskrift-ingredienser ul{
+    padding-left: 18px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.opskrift-ingredienser li{
+    margin-bottom: 15px;
+}
+
+.opskrift-fremgangsmåde ol{
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.opskrift-fremgangsmåde li{
+    margin-bottom: var(--smSpacer);
+}
+
+
+.opskrift-kitchenware{
+    margin-top: var(--mdSpacer);
+}
+
+.opskrift-kitchenware h4{
+    margin-bottom: var(--smSpacer);
+}
+
+.opskrift-kitchenware-object{
+    text-align: center;
+}
+
+.opskrift-kitchenware-liste{
+    display: flex;
+    gap: var(--smSpacer);
+}
+.opskrift-kitchenware-object img{
+    width: 70px;
+    height: 70px;
+
+/* alle billeder passer i boksen */
+    object-fit: contain;
+
+    border: 1px solid var(--grey3);
+
+    background-color: var(--white);
+}
+
+
+.opskrift-kitchenware-object p{
+    margin-top: 4px;
+    margin-bottom: 0;
+
+    font-size: 12px;
+}
+
+
+/* tips and advice */
+
+.opskrift-tips{
+    border-top: 2px solid var(--grey2);
+    border-bottom: 2px solid var(--grey2);
+    padding: var(--mdSpacer) var(--smSpacer);
+    margin-top: var(--xlSpacer);
+}
+
+.opskrift-tips h4{
+    margin: 0 0 8px 0;
+    font-size: 16px;
+}
+
+.opskrift-tips p{
+    margin: 0;
+    max-width: 550px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.opskrift-foodstory{
+    padding: var(--mdSpacer) 0;
+    text-align: center;
+}
+
+
+.opskrift-foodstory h2{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* opskrift kommentar */
+
+.opskrift-kommentar{
+    background-color: var(--secondaryColor80);
+    padding: var(--mdSpacer);
+    margin-top: var(--xlSpacer);
+}
+
+.opskrift-kommentar h2{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: var(--smSpacer);
+    font-size: 28px;
+    max-width: 1000px;
+    margin: var(--xlSpacer) auto 0 auto;
+}
+
+.opskrift-kommentar-info{
+    text-align: center;
+    margin-bottom: var(--xlSpacer);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* formularen */
+
+.opskrift-kommentar-felt{
+    width: 100%;
+    height: 160px;
+    padding: var(--smSpacer);
+    box-sizing: border-box;
+    border: none;
+    font-size: 20px;
+    font-family: "montserrat", sans-serif;
+    resize: none;
+}
+
+.opskrift-kommentar-nederst{
+    display: flex;
+    gap: var(--smSpacer);
+    margin-top: var(--smSpacer);
+}
+
+.opskrift-kommentar-input{
+    flex: 1;
+    height: 0 var(--smSpacer);
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    font-family:"Montserrat",sans-serif;
+
+}
+
+.opskrift-kommentar-knap{
+    background-color: var(--primaryColor);
+    color: var(--white);
+    height: 60px;
+    width: 230px;
+    border-radius: 15px;
+    border: 1px solid var(--black);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.opskrift-kommentar-knap:hover{
+    background-color: var(--primaryColor70);
+        color: var(--black);
+}
+
+.opskrift-container,
+.opskrift-kommentar{
+    max-width: calc(100% - 64px);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
 }
