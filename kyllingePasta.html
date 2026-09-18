@@ -1,67 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/app.js" defer></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav>
-      <div class="navbar">
-        <a href="./index.html">
-          <img src="./assets/img/logo.svg" alt="Virksomhedens logo" />
-        </a>
-        <div class="linksUser-container">
-          <div class="navlinks">
-            <ul>
-              <li><a href="./index.html">Forsiden</a></li>
-              <li><a href="./opskriftSamling.html">Opskrifter</a></li>
-              <li><a href="./foodStories.html">Food stories</a></li>
-            </ul>
-          </div>
 
-          <div class="userContainer">
-            <div class="userIcon">
-              <span class="iconStack">
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-solid fa-angle-down"></i>
-              </span>
-              <p>Log på</p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>'Let' kyllinge Pasta</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="./assets/js/app.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar">
+      <a href="./index.html">
+        <img src="./assets/img/logo.svg" alt="Virksomhedens logo" />
+      </a>
+      <div class="linksUser-container">
+        <div class="navlinks">
+          <ul>
+            <li><a href="./index.html">Forsiden</a></li>
+            <li class="active"><a href="./opskriftSamling.html">Opskrifter</a></li>
+            <li><a href="./foodStories.html">Food stories</a></li>
+          </ul>
+        </div>
+
+        <div class="userContainer">
+          <div class="userIcon">
+            <span class="iconStack">
+              <i class="fa-regular fa-user"></i>
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+            <p>Log på</p>
           </div>
         </div>
       </div>
-    </nav>
-
+    </div>
+  </nav>
+  <!-- breadcrumbs -->
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <ol>
+      <li><a href="./index.html">Forside</a></li>
+      <li><a href="./opskriftSamling.html">Opskrifter</a></li>
+      <li><span aria-current="page">'Let' kyllinge Pasta</span></li>
+    </ol>
+  </nav>
   <main class="Opskrift-side">
     <section class="opskrift-container">
-        <h1 class="opskrift-titel">Let kyllinge pasta</h1>
+      <h1 class="opskrift-titel">Let kyllinge pasta</h1>
 
-        <div class="opskrift-billed-container">
-          <img
-            src="./assets/img/light chicken dinner.jpg"
-            alt="let kyllinge pasta"
-            class="opskrift-billede"
-          />
+      <div class="opskrift-billed-container">
+        <img src="./assets/img/light chicken dinner.jpg" alt="let kyllinge pasta" class="opskrift-billede" />
 
-          <button class="opkrift-gem-opskriftsiden">
-            <i class="fa-regular fa-bookmark"></i>
-          </button>
-        </div>
-      
+        <button class="opkrift-gem-opskriftsiden">
+          <i class="fa-regular fa-bookmark"></i>
+        </button>
+      </div>
+
 
       <section class="opskrift-info-del">
         <div class="opskrift-info">
@@ -80,14 +80,16 @@
           </div>
 
           <div class="opskrift-kok-info">
-            <img
-              src="./assets/img/angela_hartnett_16x9.jpg"
-              alt="Angela hartnett"
-              class="opskrift-kok"
-            />
+            <a href="./404.html">
+              <img src="./assets/img/angela_hartnett_16x9.jpg" alt="Angela hartnett" class="opskrift-kok" />
+            </a>
 
             <div class="opskrift-kok-tekst">
-              <h3>Angela hartnett</h3>
+              <div class="profileContent">
+                <a href="./404.html">
+                  <h3>Angela hartnett</h3>
+                </a>
+              </div>
               <p>Pro-chef</p>
               <p>Italiensk mad</p>
             </div>
@@ -238,10 +240,7 @@
         <div class="foodstories-card-container">
           <div class="foodstory-card">
             <div class="foodstories-image">
-              <img
-                src="./assets/img/light chicken dinner.jpg"
-                alt="light chicken dinner"
-              />
+              <img src="./assets/img/light chicken dinner.jpg" alt="light chicken dinner" />
               <i class="fa-regular fa-bookmark"></i>
             </div>
 
@@ -275,18 +274,21 @@
 
                 <div class="foodstory-profile-and-button-container">
                   <div class="foodstory-profile">
-                    <img
-                      src="./assets/img/angela_hartnett_16x9.jpg"
-                      alt="Angela hartnett"
-                    />
+                    <a href="./404.html">
+                      <img src="./assets/img/angela_hartnett_16x9.jpg" alt="Angela hartnett" />
+                    </a>
                     <div class="foodstory-profile-oplysning">
-                      <h4>Angela hartnett</h4>
+                      <a class="somethingHadToGoWrong" href="./404.html">
+                        <h3>Angela hartnett</h3>
+                      </a>
                       <p>Italiensk mad</p>
                     </div>
                   </div>
                   <div class="share-and-button">
                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                    <button class="foodstory-button">Udforsk Foodstory</button>
+                    <div class="newFoodstoriesbutton">
+                      <a href="./404.html" class="foodstory-button">Udforsk Foodstory</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -295,131 +297,125 @@
         </div>
       </section>
     </section>
-      <section class="opskrift-kommentar">
-        <h2>Skriv en kommentar</h2>
+    <section class="opskrift-kommentar">
+      <h2>Skriv en kommentar</h2>
 
-        <p class="opskrift-kommentar-info">
-          Har du forslag til mulig erstatnings ingredients eller bare spørgsmål
-          til opskriften. Så kan du sende en mail herunder.
-        </p>
+      <p class="opskrift-kommentar-info">
+        Har du forslag til mulig erstatnings ingredients eller bare spørgsmål
+        til opskriften. Så kan du sende en mail herunder.
+      </p>
 
-        <form action="" class="opskrift-kommentar-form">
-          <textarea
-           name="" 
-           id=""
-           class="opskrift-kommentar-felt"
-           placeholder="Kommentar">
+      <form action="" class="opskrift-kommentar-form">
+        <textarea name="" id="" class="opskrift-kommentar-felt" placeholder="Kommentar">
           </textarea>
 
 
-          <div class="opskrift-kommentar-nederst">
-            <input type="text"
-            class="opskrift-kommentar-input"
-            placeholder="Navn">
+        <div class="opskrift-kommentar-nederst">
+          <input type="text" class="opskrift-kommentar-input" placeholder="Navn">
 
-            <input type="Mail"
-            class="opskrift-kommentar-input"
-            placeholder="Mail">
+          <input type="Mail" class="opskrift-kommentar-input" placeholder="Mail">
 
-            <button type="submit"
-            class="opskrift-kommentar-knap"
-            >
+          <button type="submit" class="opskrift-kommentar-knap">
             Send kommentar
-            </button>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="recipeCards">
+      <article class="opskriftKort">
+        <div class="imgWrapper">
+          <img src="./assets/img/penne_with_peas.jpg" alt="">
+        </div>
+        <button class="opskriftKortGem">
+          <i class="fa-regular fa-bookmark"></i>
+        </button>
+        <div class="opskriftKortIndhold">
+          <h2>Cremet pasta med broccoli, ærter og citron</h2>
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </div>
+        <div class="opskriftKortRating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <p class="anmeldelserRating">3,1 (96 anmeldelser)</p>
+        </div>
+        <p class="opskriftKortKategori">Aftensmad</p>
+        <div class="opskriftKortForfatter">
+          <img src="./assets/img/marcus_wareing_16x9.jpg" alt="Et billede af kokken Marcus Wareing"
+            class="opskriftKortForfatterImg">
+          <p>Lavet af <a href="./404.html">Marcus Wareing</a></p>
+        </div>
+        <a href="./404.html" class="opskriftKortButton">Se opskrift</a>
+      </article>
+      <article class="opskriftKort">
+        <div class="imgWrapper">
+          <img src="./assets/img/perfekte kartofler.jpg" alt="Perfekt kartoffel ret">
+        </div>
+        <button class="opskriftKortGem">
+          <i class="fa-regular fa-bookmark"></i>
+        </button>
+        <div class="opskriftKortIndhold">
+          <h2>Perfekte ovnstegte kartofler</h2>
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </div>
+        <div class="opskriftKortBottom">
+          <div class="opskriftKortRating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <p class="anmeldelserRating">3,3 (76 anmeldelser)</p>
           </div>
-        </form>
-      </section>
+          <p class="opskriftKortKategori">Aftensmad</p>
+          <div class="opskriftKortForfatter">
+            <img src="./assets/img/Anjum Anand.jpg" alt="Et billede af kokken Anjum Anand"
+              class="opskriftKortForfatterImg">
+            <p>Lavet af <a href="./404.html">Anjum Anand</a></p>
+          </div>
+          <a href="./404.html" class="opskriftKortButton">Se opskrift</a>
+        </div>
+      </article>
+      <article class="opskriftKort">
+        <div class="imgWrapper">
+          <img src="./assets/img/mustard_bacon_and_64379_16x9.jpg"
+            alt="Scones med sennep, bacon og karamelliserede løg">
+        </div>
+        <button class="opskriftKortGem">
+          <i class="fa-regular fa-bookmark"></i>
+        </button>
+        <div class="opskriftKortIndhold">
+          <h2>Scones med sennep, bacon og karamelliserede løg
+          </h2>
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </div>
+        <div class="opskriftKortRating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <p class="anmeldelserRating">4,4 (94 anmeldelser)</p>
+        </div>
+        <p class="opskriftKortKategori">Aftensmad</p>
+        <div class="opskriftKortForfatter">
+          <img src="./assets/img/Ainsley Harriott.jpg" alt="Et billede af kokken Ainsley Harriott"
+            class="opskriftKortForfatterImg">
+          <p>Lavet af <a href="./404.html">Marcus Wareing</a></p>
+        </div>
+        <a href="./404.html" class="opskriftKortButton">Se opskrift</a>
+      </article>
 
-      <section class="recipeCards">
-            <article class="opskriftKort">
-                <div class="imgWrapper">
-                    <img src="./assets/img/penne_with_peas.jpg" alt="">
-                </div>
-                <button class="opskriftKortGem">
-                    <i class="fa-regular fa-bookmark"></i>
-                </button>
-                <div class="opskriftKortIndhold">
-                    <h2>Cremet pasta med broccoli, ærter og citron</h2>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                </div>
-                <div class="opskriftKortRating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p class="anmeldelserRating">3,1 (96 anmeldelser)</p>
-                </div>
-                <p class="opskriftKortKategori">Aftensmad</p>
-                <div class="opskriftKortForfatter">
-                    <img src="./assets/img/marcus_wareing_16x9.jpg" alt="Et billede af kokken Marcus Wareing"
-                        class="opskriftKortForfatterImg">
-                    <p>Lavet af <a href="#">Marcus Wareing</a></p>
-                </div>
-                <a href="#" class="opskriftKortButton">Se opskrift</a>
-            </article>
-            <article class="opskriftKort">
-                <div class="imgWrapper">
-                    <img src="./assets/img/penne_with_peas.jpg" alt="">
-                </div>
-                <button class="opskriftKortGem">
-                    <i class="fa-regular fa-bookmark"></i>
-                </button>
-                <div class="opskriftKortIndhold">
-                    <h2>Cremet pasta med broccoli, ærter og citron</h2>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                </div>
-                <div class="opskriftKortRating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p class="anmeldelserRating">3,1 (96 anmeldelser)</p>
-                </div>
-                <p class="opskriftKortKategori">Aftensmad</p>
-                <div class="opskriftKortForfatter">
-                    <img src="./assets/img/marcus_wareing_16x9.jpg" alt="Et billede af kokken Marcus Wareing"
-                        class="opskriftKortForfatterImg">
-                    <p>Lavet af <a href="#">Marcus Wareing</a></p>
-                </div>
-                <a href="#" class="opskriftKortButton">Se opskrift</a>
-            </article>
-            <article class="opskriftKort">
-                <div class="imgWrapper">
-                    <img src="./assets/img/penne_with_peas.jpg" alt="">
-                </div>
-                <button class="opskriftKortGem">
-                    <i class="fa-regular fa-bookmark"></i>
-                </button>
-                <div class="opskriftKortIndhold">
-                    <h2>Cremet pasta med broccoli, ærter og citron</h2>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                </div>
-                <div class="opskriftKortRating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <p class="anmeldelserRating">3,1 (96 anmeldelser)</p>
-                </div>
-                <p class="opskriftKortKategori">Aftensmad</p>
-                <div class="opskriftKortForfatter">
-                    <img src="./assets/img/marcus_wareing_16x9.jpg" alt="Et billede af kokken Marcus Wareing"
-                        class="opskriftKortForfatterImg">
-                    <p>Lavet af <a href="#">Marcus Wareing</a></p>
-                </div>
-                <a href="#" class="opskriftKortButton">Se opskrift</a>
-            </article>
-
-    </main>
+  </main>
 
 
-    
+
   <footer class="footer">
     <div class="footer-content">
-      
+
       <div class="footer-venstre">
         <h3>Kontakt:</h3>
         <p>
@@ -430,30 +426,31 @@
           <strong>Telefon:</strong>
           <a href="tel:+4541839642"> 45 41 83 96 42 </a>
         </p>
-        
+
         <img src="assets/img/logo.svg" alt="CuriousCooks logo" class="footer-logo" />
       </div>
-      
+
       <div class="footer-sociale-medier">
-        <a href="#" aria-label="Facebook">
+        <a href="./404.html" aria-label="Facebook">
           <i class="fa-brands fa-facebook"></i>
         </a>
-        
-        
-        <a href="#" aria-label="X">
+
+
+        <a href="./404.html" aria-label="X">
           <i class="fa-brands fa-x-twitter"></i>
         </a>
-        
-        
-        <a href="#" aria-label="Linkedln">
+
+
+        <a href="./404.html" aria-label="Linkedln">
           <i class="fa-brands fa-linkedin"></i>
         </a>
-        
+
       </div>
-      
+
     </div>
-    
+
   </footer>
-  
-  </body>
+
+</body>
+
 </html>
