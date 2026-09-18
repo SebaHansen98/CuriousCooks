@@ -404,6 +404,16 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
+.foodstory-profile-oplysning {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.foodstory-profile-oplysning h4, .foodstory-profile-oplysning p {
+    margin: 0;
+}
  
 /*Footer*/
  
@@ -539,7 +549,7 @@ img {
     }
 }
 
-
+/* Forside */
 .forside-hero {
     position: relative;
     height: 400px;
@@ -577,8 +587,7 @@ img {
     font-weight: 700;
 }
 .forside-intro {
-    padding: var(--mdSpacer)var(--xlSpacer);
-    /* background-color: var(--grey4); */
+    margin-bottom: 3rem;
 }
 .forside-intro h2 {
     /* her ligger jeg overskriften i midten */
@@ -587,6 +596,7 @@ img {
     margin-top: 0;
     /* det samme bare under */
     margin-bottom: var(--mdSpacer);
+    margin-top: 3rem;
     font-size: 26px;
     font-weight: 700;
 }
@@ -595,11 +605,12 @@ img {
 .forside-intro-content {
     display: flex;
     /* her centrer vi indholdet */
-    justify-content: center;
     align-items: flex-start;
     gap: var(--smSpacer);
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
 }
  
 /* her fokusere vi på billedet i intro sektionen */
@@ -610,7 +621,7 @@ img {
 }
 /* her fokusere vi på teksten i intro sektionen */
 .forside-intro-tekst {
-    width: 370px;
+    /* width: 370px; */
     font-size: 16px;
     line-height: 1.5;
     color: var(--black);
@@ -620,9 +631,225 @@ img {
     width: 100%;
     margin: var(--smSpacer);
 }
- 
- 
- 
+
+.newrecipesHeader h2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+/* Forside cards */
+.newRecipesContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.newRecipescards {
+    width: 350px;
+    height: auto;
+
+    background-color: var(--primaryColor90);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    /* border: solid 1px; */
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.newRecipesimage img {
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.newRecipesGem {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    background-color: #e1e0e0a4;
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.newRecipesGem .fa-bookmark {
+    font-size: 30px;
+}
+
+.newRecipescardContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newRecipesButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 47px;
+    background-color: var(--primaryColor);
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.newRecipesButton:hover {
+    background-color: var(--primaryColor70);
+    color: var(--black);
+} 
+
+/* Nye food stories */
+.newFoodstoriesHeader h2, .proChefprofileheader h2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.newFoodstoriescontainer {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin: 2rem auto 0;
+    margin-bottom: 3rem;
+}
+
+.newFoodstoriescard {
+    background-color: var(--secondaryColor90);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newFoodstories-image {
+    position: relative;
+    display: inline-block;
+}
+
+.newFoodstories-image img {
+    width: 235px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.newFoodstories-image .fa-bookmark {
+    position: absolute; 
+    top: 10px;
+    left: 3px;  
+    background-color: #e1e0e0a4;
+    border: none;
+    border-radius: 50%;
+    padding: 4px;
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.newFoodstories-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newFoodstory-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.newFoodstory-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newFoodstory-profile-and-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newFoodstory-profile-oplysning {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.newFoodstory-profile-oplysning h4, .newFoodstory-profile-oplysning p {
+    margin: 0;
+}
+
+/* Professionel chefs profile */
+.proChefprofilecontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.chefProfileimage-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.chefProfileimage-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.profileContent h4, .profileContent p {
+    margin: 0;
+}
+
+
+
 .opskriftKortIndhold {
     display: flex;
     justify-content: space-between;
@@ -639,6 +866,7 @@ img {
         margin-top: 20px;
     }
 }
+
  
 .opskriftKortRating {
     display: flex;
