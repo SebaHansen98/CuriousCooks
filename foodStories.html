@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Food stories</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/app.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -39,8 +39,52 @@
             </div>
         </div>
     </nav>
- 
+
+    <header>
+        <div class="foodstory-header-content">
+            <img src="./assets/img/Foodstories.jpg" alt="Foodstories">
+            <div class="foodstory-header">
+                <h1>Food stories</h1>
+            </div>
+        </div>
+    </header>
+    <!-- breadcrumbs -->
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <ol>
+            <li><a href="./index.html">Forside</a></li>
+            <li><span aria-current="page">Food stories</span></li>
+        </ol>
+    </nav>
+    
     <main>
+        <section class="foodstory-intro-container">
+            <h2>Food stories verden rundt</h2>
+            <div class="foodstories-intro-image">
+                <img src="./assets/img/Foodstorie billede.jpg" alt="Food stories introduktion">
+                <div class="foodstories-intro-text">
+                    <p>
+                        Mad handler ikke bare om at spise, men at alle retter har hver sin historie om traditioner, kulturer, råvarer og mennesker. 
+                    </p>
+
+                    <p>
+                        På food stories tager vi dig med på en smagfuld rejse rundt i verden, hvor vi dykker ned i de autentiske fortællinger bag nogle af de mest velkendt retter.
+                    </p>
+                    
+                    <p>
+
+                        Her kan du opleve spændende madoplevelser, lære om forskellige køkkener og opdage, hvordan unikke ingredienser og tilberedningsmetoder skaber smag.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="filter-opret-knap">
+            <button class="filter"><i class="fa-solid fa-sliders"></i> | Filter</button>
+            <button onclick="myFunction()" class="filter"><i class="fa-solid fa-plus"></i> | Tilføj Food story</button>
+
+        </section>
+        <div class="line"></div>
+
         <section class="foodstories-container">
  
             <!-- Foodstory card -->
@@ -95,7 +139,7 @@
             <div class="foodstories-card-container">
                 <div class="foodstory-card">
                     <div class="foodstories-image">
-                        <img src="./assets/img/Sapa.jpg" alt="Sapa bjergene">
+                        <img src="./assets/img/Indiskmad.jpg" alt="Indisk krydderier">
                         <i class="fa-regular fa-bookmark"></i>
                     </div>
  
@@ -103,33 +147,33 @@
                         <div class="foodstory-indhold">
                             <div class="foodstory-tekst-indhold">
                                 <div class="foodstory-titel-dato">
-                                    <h2>Mad kulturen i Vietnam's bjerge</h2>
-                                    <p>16/07/2026</p>
+                                    <h2>Min kulturhistorisk madoplevelse af Indiansk mad</h2>
+                                    <p>16/05/2026</p>
                                 </div>
-                                <p>Turen til Vietnam var yderst fantastisk, men det bedste var helt klart madkulturen.
-                                    Jeg tog op i bjergene i den nordlige del af Vietnam.
-                                    Selve turen derop var fantastisk, 5-6 timer i bus fra Hanoi til Sapa, med flotte
-                                    omgivelser hele vejen op.
-                                    Suppen “Pho”, har givet mig en ny form for madoplevelsen. Smagen af Pho har en dyb,
-                                    aromatisk og frisk blanding af umani.</p>
+                                <p>
+                                    Har du nogensinde prøvet indisk mad? hvis ikke, så læs videre her.
+
+                                    Jeg er selv fra Indian og jeg har prøvet forskellige indiske retter. 
+                                    I Indian bruger man mange forskellige krydderier som gør maden til at smag upåklageligt, og derfor vil jeg gerne dele min madoplevelse og min Indisk kultur. 
+                                </p>
                             </div>
                             <div class="foodstory-rating">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                                 <div class="rating-antal">
-                                    <p>(100)</p>
+                                    <p>(300)</p>
                                 </div>
                             </div>
  
                             <div class="foodstory-profile-and-button-container">
                                 <div class="foodstory-profile">
-                                    <img src="./assets/img/Asian dude.jpg" alt="professionel asiatisk chef">
+                                    <img src="./assets/img/Anjum Anand.jpg" alt="professionel asiatisk chef">
                                     <div class="foodstory-profile-oplysning">
-                                        <h4>Andrew Wong</h4>
-                                        <p>Asiatisk chef</p>
+                                        <h4>Anjum Anand</h4>
+                                        <p>Indian chef</p>
                                     </div>
                                 </div>
                                 <div class="share-and-button">
@@ -145,7 +189,7 @@
             <div class="foodstories-card-container">
                 <div class="foodstory-card">
                     <div class="foodstories-image">
-                        <img src="./assets/img/Sapa.jpg" alt="Sapa bjergene">
+                        <img src="./assets/img/Jerk chicken.jpg" alt="Jamaicansk kylling">
                         <i class="fa-regular fa-bookmark"></i>
                     </div>
  
@@ -153,33 +197,30 @@
                         <div class="foodstory-indhold">
                             <div class="foodstory-tekst-indhold">
                                 <div class="foodstory-titel-dato">
-                                    <h2>Mad kulturen i Vietnam's bjerge</h2>
-                                    <p>16/07/2026</p>
+                                    <h2>Jamaicansk style Jerk kylling</h2>
+                                    <p>5/08/2025</p>
                                 </div>
-                                <p>Turen til Vietnam var yderst fantastisk, men det bedste var helt klart madkulturen.
-                                    Jeg tog op i bjergene i den nordlige del af Vietnam.
-                                    Selve turen derop var fantastisk, 5-6 timer i bus fra Hanoi til Sapa, med flotte
-                                    omgivelser hele vejen op.
-                                    Suppen “Pho”, har givet mig en ny form for madoplevelsen. Smagen af Pho har en dyb,
-                                    aromatisk og frisk blanding af umani.</p>
+                                <p>
+                                    Madkulturen i det jamaicanskekyster har givet mig inspiration. Jerk chicken har en fantastisk smag, og sjovt at tilberede samtidig med har det givet mig oplevelse for livet, at prøve andre madkulturer. 
+                                </p>
                             </div>
                             <div class="foodstory-rating">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
                                 <div class="rating-antal">
-                                    <p>(100)</p>
+                                    <p>(8742)</p>
                                 </div>
                             </div>
  
                             <div class="foodstory-profile-and-button-container">
                                 <div class="foodstory-profile">
-                                    <img src="./assets/img/Asian dude.jpg" alt="professionel asiatisk chef">
+                                    <img src="./assets/img/Ainsley Harriott.jpg" alt="professionel asiatisk chef">
                                     <div class="foodstory-profile-oplysning">
-                                        <h4>Andrew Wong</h4>
-                                        <p>Asiatisk chef</p>
+                                        <h4>Ainsley Harriott</h4>
+                                        <p>Jamicansk chef</p>
                                     </div>
                                 </div>
                                 <div class="share-and-button">
